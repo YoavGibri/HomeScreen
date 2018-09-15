@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RootLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/sunrise"
+    android:keepScreenOn="true">
+
+    <WebView
+        android:id="@+id/webView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="invisible"/>
+
+    <TextView
+        android:id="@+id/textViewTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="130dp"
+        android:text="בוקר טוב, יואב"
+        android:textColor="#480101"
+        android:textSize="50sp" />
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="50dp"
+        android:layout_marginTop="50dp"
+        android:layout_alignParentEnd="true"
+        android:background="@drawable/frame"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textStyle="bold"
+            android:text="זמן הגעה לעבודה" />
+
+        <TextView
+            android:id="@+id/textViewTravelDuration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:text="טוען..." />
+
+        <TextView
+            android:id="@+id/textViewUpdateTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="טוען..." />
+    </LinearLayout>
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerViewNew"
+        android:layout_width="300dp"
+        android:layout_margin="20dp"
+        android:layout_height="wrap_content"/>
+
+</RelativeLayout>
